@@ -107,6 +107,63 @@ h1 {
   transform: translateY(-1px);
 }
 
+.about {
+  margin-top: 1.2rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 18px;
+  padding: 1.2rem;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: var(--shadow);
+  animation: rise 650ms ease-out both;
+  animation-delay: 120ms;
+}
+
+.avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #f4fffd;
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+  letter-spacing: 0.04em;
+}
+
+.about-copy h2 {
+  margin: 0;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2.3vw, 1.6rem);
+}
+
+.about-copy p {
+  margin: 0.62rem 0 0;
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.about-links {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.about-links a {
+  text-decoration: none;
+  color: var(--accent-strong);
+  border-bottom: 1px solid rgba(15, 118, 110, 0.35);
+}
+
+.about-links a:hover,
+.about-links a:focus-visible {
+  color: var(--accent);
+}
+
 .projects {
   margin-top: 1.5rem;
   display: grid;
@@ -158,6 +215,12 @@ h1 {
 }
 
 @media (min-width: 720px) {
+  .about {
+    grid-template-columns: auto 1fr;
+    gap: 1.3rem;
+    padding: 1.35rem;
+  }
+
   .card {
     grid-column: span 6;
   }
