@@ -125,12 +125,9 @@ h1 {
   width: 76px;
   height: 76px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  color: #f4fffd;
-  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
-  letter-spacing: 0.04em;
+  object-fit: cover;
+  border: 2px solid rgba(15, 118, 110, 0.28);
+  background: #d4ecea;
 }
 
 .about-copy h2 {
@@ -162,6 +159,20 @@ h1 {
 .about-links a:hover,
 .about-links a:focus-visible {
   color: var(--accent);
+}
+
+.about-links .cv-button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.38rem 0.82rem;
+  border-bottom: 1px solid var(--line);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.about-links .cv-button:hover,
+.about-links .cv-button:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-1px);
 }
 
 .projects {
