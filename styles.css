@@ -145,9 +145,10 @@ h1 {
 
 .about-links {
   margin-top: 0.9rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
   gap: 0.8rem;
+  align-items: start;
 }
 
 .about-links a {
@@ -157,12 +158,15 @@ h1 {
 }
 
 .contact-box {
+  grid-column: 1 / -1;
+  display: block;
   min-width: 0;
 }
 
 .contact-box summary {
   list-style: none;
   cursor: pointer;
+  display: inline-block;
   color: var(--accent-strong);
   border-bottom: 1px solid rgba(15, 118, 110, 0.35);
 }
@@ -173,7 +177,8 @@ h1 {
 
 .contact-panel {
   position: static;
-  width: min(520px, 100%);
+  width: 100%;
+  max-width: 560px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: #fffdf9;
@@ -183,7 +188,7 @@ h1 {
 }
 
 .contact-box[open] {
-  flex-basis: 100%;
+  grid-column: 1 / -1;
 }
 
 .contact-panel p {
