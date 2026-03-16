@@ -156,6 +156,48 @@ h1 {
   border-bottom: 1px solid rgba(15, 118, 110, 0.35);
 }
 
+.contact-box {
+  position: relative;
+}
+
+.contact-box summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--accent-strong);
+  border-bottom: 1px solid rgba(15, 118, 110, 0.35);
+}
+
+.contact-box summary::-webkit-details-marker {
+  display: none;
+}
+
+.contact-panel {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 0;
+  width: min(360px, 90vw);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fffdf9;
+  box-shadow: var(--shadow);
+  padding: 0.78rem 0.9rem;
+  z-index: 4;
+}
+
+.contact-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.contact-panel p + p {
+  margin-top: 0.45rem;
+}
+
+.contact-panel a {
+  word-break: break-word;
+}
+
 .about-links a:hover,
 .about-links a:focus-visible {
   color: var(--accent);
@@ -253,6 +295,14 @@ h1 {
     grid-template-columns: auto 1fr;
     gap: 1.3rem;
     padding: 1.35rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-panel {
+    left: 0;
+    right: auto;
+    width: min(320px, 86vw);
   }
 }
 
