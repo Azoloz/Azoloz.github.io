@@ -47,19 +47,24 @@
           </p>
           <div class="about-links">
             <a href="https://github.com/Azoloz" target="_blank" rel="noreferrer">GitHub</a>
-            <details class="contact-box">
-              <summary>Contact</summary>
-              <div class="contact-panel" role="note" aria-label="Contact information">
-                <p><strong>Email:</strong> <a href="mailto:valdezperez.anuar.o.cbtis37@gmail.com">valdezperez.anuar.o.cbtis37@gmail.com</a></p>
-                <p>
-                  <strong>LinkedIn:</strong>
-                  <a href="https://www.linkedin.com/in/anuar-orlando-valdez-perez-a90869231/" target="_blank" rel="noreferrer">
-                    anuar-orlando-valdez-perez-a90869231
-                  </a>
-                </p>
-              </div>
-            </details>
+            <button
+              class="contact-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="contact-panel"
+            >
+              Contact
+            </button>
             <a class="cv-button" href="Anuar_Valdez_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+          </div>
+          <div class="contact-panel" id="contact-panel" role="note" aria-label="Contact information" hidden>
+            <p><strong>Email:</strong> <a href="mailto:valdezperez.anuar.o.cbtis37@gmail.com">valdezperez.anuar.o.cbtis37@gmail.com</a></p>
+            <p>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/anuar-orlando-valdez-perez-a90869231/" target="_blank" rel="noreferrer">
+                anuar-orlando-valdez-perez-a90869231
+              </a>
+            </p>
           </div>
         </div>
       </section>
@@ -174,5 +179,22 @@
         </article>
       </section>
     </main>
+    <script>
+      const contactToggle = document.querySelector('.contact-toggle');
+      const contactPanel = document.querySelector('#contact-panel');
+
+      if (contactToggle && contactPanel) {
+        contactToggle.addEventListener('click', () => {
+          const isHidden = contactPanel.hasAttribute('hidden');
+          if (isHidden) {
+            contactPanel.removeAttribute('hidden');
+            contactToggle.setAttribute('aria-expanded', 'true');
+          } else {
+            contactPanel.setAttribute('hidden', '');
+            contactToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    </script>
   </body>
 </html>

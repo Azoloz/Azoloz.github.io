@@ -157,22 +157,15 @@ h1 {
   border-bottom: 1px solid rgba(15, 118, 110, 0.35);
 }
 
-.contact-box {
-  grid-column: 1 / -1;
-  display: block;
-  min-width: 0;
-}
-
-.contact-box summary {
-  list-style: none;
+.contact-toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
   cursor: pointer;
-  display: inline-block;
+  font: inherit;
   color: var(--accent-strong);
   border-bottom: 1px solid rgba(15, 118, 110, 0.35);
-}
-
-.contact-box summary::-webkit-details-marker {
-  display: none;
 }
 
 .contact-panel {
@@ -185,10 +178,7 @@ h1 {
   box-shadow: var(--shadow);
   padding: 0.78rem 0.9rem;
   margin-top: 0.55rem;
-}
-
-.contact-box[open] {
-  grid-column: 1 / -1;
+  overflow: hidden;
 }
 
 .contact-panel p {
@@ -207,6 +197,11 @@ h1 {
 
 .about-links a:hover,
 .about-links a:focus-visible {
+  color: var(--accent);
+}
+
+.contact-toggle:hover,
+.contact-toggle:focus-visible {
   color: var(--accent);
 }
 
