@@ -157,7 +157,7 @@ h1 {
 }
 
 .contact-box {
-  position: relative;
+  min-width: 0;
 }
 
 .contact-box summary {
@@ -172,16 +172,18 @@ h1 {
 }
 
 .contact-panel {
-  position: absolute;
-  top: calc(100% + 0.45rem);
-  left: 0;
-  width: min(360px, 90vw);
+  position: static;
+  width: min(520px, 100%);
   border: 1px solid var(--line);
   border-radius: 12px;
   background: #fffdf9;
   box-shadow: var(--shadow);
   padding: 0.78rem 0.9rem;
-  z-index: 4;
+  margin-top: 0.55rem;
+}
+
+.contact-box[open] {
+  flex-basis: 100%;
 }
 
 .contact-panel p {
@@ -300,9 +302,7 @@ h1 {
 
 @media (max-width: 560px) {
   .contact-panel {
-    left: 0;
-    right: auto;
-    width: min(320px, 86vw);
+    width: 100%;
   }
 }
 
