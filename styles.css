@@ -214,6 +214,30 @@ h1 {
   line-height: 1.58;
 }
 
+.project-image {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  margin: 0.8rem 0 0.15rem;
+  border: 1px solid var(--line);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+}
+
+.tech-tag {
+  font-size: 0.78rem;
+  color: var(--accent-strong);
+  border: 1px solid rgba(15, 118, 110, 0.28);
+  background: rgba(15, 118, 110, 0.08);
+  padding: 0.22rem 0.54rem;
+  border-radius: 999px;
+}
+
 .card a {
   color: var(--accent-strong);
   text-underline-offset: 3px;
