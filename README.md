@@ -1,30 +1,30 @@
 # Azoloz.github.io
 
-Portafolio minimalista en GitHub Pages con enlaces a proyectos de analisis de datos.
+Minimalist GitHub Pages portfolio with links to data analysis projects.
 
-## Vista local
+## Local preview
 
-Abre `index.html` en tu navegador o usa la extension **Live Server** en VS Code.
+Open `index.html` in your browser or use the **Live Server** extension in VS Code.
 
-## Publicar en GitHub Pages
+## Publish on GitHub Pages
 
-1. Crea un repositorio llamado `Azoloz.github.io` en GitHub.
-2. Desde esta carpeta, ejecuta:
+1. Create a repository named `Azoloz.github.io` on GitHub.
+2. From this folder, run:
 
 ```bash
 git init
 git add .
-git commit -m "Crear pagina de portafolio"
+git commit -m "Create portfolio page"
 git branch -M main
 git remote add origin https://github.com/Azoloz/Azoloz.github.io.git
 git push -u origin main
 ```
 
-3. Espera 1-2 minutos y abre:
+3. Wait 1-2 minutes and open:
 
 `https://azoloz.github.io/`
 
-## Repositorios enlazados
+## Linked repositories
 
 - https://github.com/Azoloz/youtube-trending-analysis-tableau
 - https://github.com/Azoloz/chicago-taxi-trip-analysis
