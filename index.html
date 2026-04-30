@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -186,12 +186,21 @@
             alt="Veterinary Pharmacovigilance Analysis project preview"
             loading="lazy"
           />
-          <p>
-            <strong>Title:</strong> Veterinary Drug Safety in Dogs and Cats with Python.<br />
-            <strong>Challenge:</strong> I needed to detect meaningful safety patterns in FDA veterinary adverse event reports, while keeping the study focused only on dogs and cats and moving beyond simple frequency charts.<br />
-            <strong>Process:</strong> I built an end-to-end workflow in Jupyter using Python, Pandas, NumPy, Matplotlib, and Seaborn; cleaned nested API fields (drug, reaction, outcome, breed, dates); standardized labels; then added breed-level analysis, PRR safety signal detection, and seasonal trend analysis with a monthly heatmap. I iteratively validated outputs and refined visuals to keep findings readable and clinically interpretable.<br />
-            <strong>Result:</strong> Dogs represented about 87% of reports; antiparasitics (Spinosad, Ivermectin, Selamectin) dominated the dataset; the strongest disproportionality signal was Spinosad -> Emesis (PRR 138); and reporting showed clear seasonality, peaking around spring/summer. The main lesson is that combining descriptive EDA with pharmacovigilance metrics and stratification (breed/time) produces stronger, more actionable insights.
-          </p>
+              <p>
+                This project analyzed FDA veterinary adverse event data to
+                identify meaningful drug-safety patterns in dogs and cats
+                beyond basic frequency charts. I built an end-to-end workflow
+                in Jupyter using Python, Pandas, NumPy, Matplotlib, and
+                Seaborn, cleaned and standardized nested API fields, and
+                expanded the analysis with breed-level views, PRR signal
+                detection, and monthly seasonality trends. Using Jupyter
+                Notebook, FDA Open API data, and Git/GitHub, I found that dogs
+                represented most reports, antiparasitics dominated the dataset,
+                Spinosad -> Emesis showed the strongest disproportionality
+                signal (PRR 138), and reporting followed a clear spring/summer
+                seasonal peak, confirming the value of combining EDA with
+                pharmacovigilance metrics for actionable insights.
+              </p>
           <div class="tech-list" aria-label="Technologies used">
             <span class="tech-tag">Python</span>
             <span class="tech-tag">Pandas</span>
@@ -199,7 +208,7 @@
             <span class="tech-tag">Matplotlib</span>
             <span class="tech-tag">Seaborn</span>
             <span class="tech-tag">Jupyter Notebook</span>
-            <span class="tech-tag">FDA OpenFDA API</span>
+            <span class="tech-tag">FDA Open API</span>
             <span class="tech-tag">Git/GitHub</span>
           </div>
           <a
@@ -230,3 +239,4 @@
     </script>
   </body>
 </html>
+
